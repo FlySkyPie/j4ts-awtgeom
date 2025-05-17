@@ -1,11 +1,8 @@
 const gulp = require('gulp');
-const appendPrepend = require('gulp-append-prepend');
-
-const jsPath = 'bundle/j4ts-awtgeom.js';
+const concat = require('gulp-concat');
 
 gulp.task('inject-global', function () {
-    return gulp.src(jsPath)
-        .pipe(appendPrepend.appendText('\nglobalThis.java = java;\n'))
-        .pipe(appendPrepend.appendText('\nglobalThis.sun = sun;\n'))
+    return gulp.src(['bundle/j4ts-awtgeom.js', 'src/exporter.js'])
+        .pipe(concat("j4ts-awtgeom.js"))
         .pipe(gulp.dest('dist'));
 });
