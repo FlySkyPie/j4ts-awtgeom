@@ -1,0 +1,23 @@
+{
+  "name": "@flyskypie/j4ts-awtgeom",
+  "version": "1.0.0",
+  "main": "./dist/j4ts-awtgeom.js",
+  "module": "./dist/j4ts-awtgeom.js",
+  "types": "./dist/j4ts-awtgeom.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "./mvnw install && gulp inject-global"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-append-prepend": "^1.0.9"
+  },
+  "license": "Apache-2.0",
+  "files": [
+    "./dist/j4ts-awtgeom.js",
+    "./dist/j4ts-awtgeom.d.ts",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ]
+}

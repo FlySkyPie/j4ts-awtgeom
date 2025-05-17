@@ -4,3 +4,8 @@ This project contains an extraction of the ``java.awt.geom`` API. It is compiled
 
 It is compiled without the J4TS runtime, which means that all the used JDK classes are erased from the generated JavaScript in order to keep only pure JavaScript code.
  
+## Prerequirement
+
+- Java 8
+- Node.js >= 18
+- pnpm >= 9
