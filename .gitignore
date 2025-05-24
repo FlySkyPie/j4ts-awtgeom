@@ -33,3 +33,4 @@ dist-ssr
 /src/main/resources/META-INF/resources/
 
 bundle/
+node
